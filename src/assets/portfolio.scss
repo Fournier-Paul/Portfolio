@@ -1,0 +1,9 @@
+.card:hover {
+    transform: scale(1.1);
+  }
+   @media (max-width: 1199px) {
+       div.card.hover-certif{
+           margin-right: 3rem !important;
+           margin-left: 3rem !important;
+       }
+  }

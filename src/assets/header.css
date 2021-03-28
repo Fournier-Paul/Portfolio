@@ -1,0 +1,293 @@
+.line-1 {
+  position: relative;
+  top: 50%;
+  width: 24em;
+  margin: 0 auto;
+  font-size: 160%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter {
+  -webkit-animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+          animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@-webkit-keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 17em;
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 17em;
+  }
+}
+
+@media (max-width: 458px) {
+  @-webkit-keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 195px;
+    }
+  }
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 195px;
+    }
+  }
+}
+
+@-webkit-keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@-webkit-keyframes caret {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes caret {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+ul.menu-list {
+  display: inline-block;
+  width: 100%;
+  vertical-align: baseline;
+}
+
+li {
+  display: inline-block;
+  padding: 20;
+}
+
+nav#custom {
+  position: absolute;
+  background-color: #2C3E50;
+  text-align: center;
+  top: 140;
+  width: 120%;
+  margin-left: -80px;
+  text-transform: uppercase;
+  height: 64px;
+}
+
+section#navbar {
+  width: 100%;
+}
+
+div.navbar.navbar-expand-lg.fixed-top.d-flex.justify-content-center {
+  background-color: #28415b;
+  height: 200px;
+}
+
+div.menu-button.menu-button-active {
+  display: none;
+}
+
+@media (max-width: 1082px) {
+  nav#myHeader {
+    height: auto;
+    background-color: #2C3E50;
+  }
+  div.paraApropos {
+    margin-top: 50px !important;
+  }
+  div.col-lg-2.mb-5.titleApropos {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+}
+
+/*
+  a.moove-margin {
+    margin-left: -30px; }
+  */
+@media (min-width: 1082px) {
+  button.menu-button {
+    display: none;
+  }
+}
+
+ul.menu-list {
+  display: inline-block;
+  width: 100%;
+}
+
+li.inline-pad {
+  display: inline-block;
+  padding: 20;
+}
+
+nav.customNav {
+  position: absolute;
+  display: inline-block;
+  background-color: #2C3E50;
+  text-align: center;
+  top: 200;
+  width: 100%;
+  text-transform: uppercase;
+  top: 280px;
+  height: 64px;
+}
+
+section#navbar {
+  width: 100%;
+}
+
+div.navbar.navbar-expand-lg.fixed-top.d-flex.justify-content-center {
+  position: absolute;
+  background-color: #28415b;
+  height: 280px;
+}
+
+div.menu-button.menu-button-active {
+  display: none;
+}
+
+button.menu-button {
+  background-color: #2C3E50;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0 !important;
+  width: 100%;
+}
+
+p.line-1.anim-typewriter {
+  color: white;
+}
+
+.colorCustom {
+  color: black;
+}
+
+.moove-margin {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.nav-link {
+  padding: 0;
+}
+
+.router-link-active {
+  color: #007bff;
+}
+
+@media (max-width: 483px) {
+  li.inline-pad {
+    display: block;
+    margin-right: 2rem;
+    overflow: hidden;
+    -webkit-transform: none;
+            transform: none;
+    position: none;
+  }
+  button.menu-button.mt-1.mb-1 {
+    margin-bottom: 7px !important;
+  }
+}
+
+.custom-position {
+  position: fixed !important;
+  top: 0 !important;
+}
+
+.custom-position-nav {
+  position: fixed;
+}
+
+.menu-svg {
+  height: 30px;
+}
+
+span.typed-text {
+  color: #D2B94B;
+}
+
+span.cursor {
+  display: inline-block;
+  margin-left: 3px;
+  width: 4px;
+  background-color: #fff;
+  -webkit-animation: cursorBlink 1s infinite;
+          animation: cursorBlink 1s infinite;
+}
+
+span.cursor.typing {
+  -webkit-animation: none;
+          animation: none;
+}
+
+@-webkit-keyframes cursorBlink {
+  49% {
+    background-color: #fff;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+}
+
+@keyframes cursorBlink {
+  49% {
+    background-color: #fff;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+}
+/*# sourceMappingURL=header.css.map */

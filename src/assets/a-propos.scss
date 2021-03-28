@@ -1,0 +1,32 @@
+.btn-primary {
+    background-color: #28415b;
+  
+    &:hover {
+      background-color: white;
+      color: #212529;
+    }
+  }
+  
+  .btn-light {
+    background-color: white;
+  
+    &:hover {
+      background-color: #28415b;
+      color: white;
+    }
+  }
+  
+  .btn {
+    border: 0px;
+  }
+  
+  @media screen and (max-width: 767px) {
+    div.col-md-6.animate__animated.animate__zoomIn {
+    //   padding-left: 45px;
+      padding-right: 45px;
+    }
+  
+    .fixed-top-position {
+      top: 500px;
+    }
+  }

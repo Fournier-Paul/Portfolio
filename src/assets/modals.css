@@ -1,0 +1,121 @@
+@media (min-width: 1082px) {
+  button.menu-button {
+    display: none;
+  }
+}
+
+.bloc-modale {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 9999;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.modale {
+  background: #f1f1f1;
+  color: #333;
+  position: fixed;
+  bottom: 10%;
+}
+
+.btn-modale {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+div.modal-footer {
+  border: 0px;
+}
+
+div.modal-body.textCustom {
+  font-size: 20px;
+}
+
+div.modale.card {
+  bottom: 0;
+  border: 1px solid white;
+  -webkit-box-shadow: 0px 0px 5px 3px #ccc;
+          box-shadow: 0px 0px 5px 3px #ccc;
+}
+
+.btn.btn-primary1 {
+  background-color: #28415b;
+  color: white;
+}
+
+.btn.btn-primary1:hover {
+  background-color: white;
+  color: #212529;
+}
+
+.bg-bootstrap {
+  color: #f1f1f1;
+  background-color: #7952b3;
+}
+
+.bg-sass {
+  color: #f1f1f1;
+  background-color: #bf4080;
+}
+
+.bg-php {
+  color: #f1f1f1;
+  background-color: #4F5B93;
+}
+
+div.modal-header {
+  padding: 1rem 1rem;
+  background-color: #28415b;
+  color: white;
+}
+
+div.padding-modal {
+  padding: 35px;
+}
+
+div.padding-modal-side {
+  padding-right: 35px;
+  padding-left: 35px;
+}
+
+div.modal-content {
+  width: auto;
+}
+
+.modal-header {
+  background-color: #28415b;
+  color: white;
+}
+
+.text-decoration-underline {
+  text-decoration: underline;
+}
+
+.list-item {
+  display: list-item;
+  list-style-type: disc;
+}
+/*# sourceMappingURL=modals.css.map */

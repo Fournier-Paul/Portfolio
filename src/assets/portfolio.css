@@ -1,0 +1,12 @@
+.card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media (max-width: 1199px) {
+  div.card.hover-certif {
+    margin-right: 3rem !important;
+    margin-left: 3rem !important;
+  }
+}
+/*# sourceMappingURL=portfolio.css.map */
