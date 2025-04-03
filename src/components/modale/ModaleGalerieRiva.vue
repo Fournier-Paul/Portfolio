@@ -27,7 +27,7 @@
       <span class="badge bg-sass mr-2 mb-3">Sass</span>
       <span class="badge bg-bootstrap mr-2 mb-3">Bootstrap</span></p>
       <hr>
-      <a href="https://galerie-riva.com" target="_blank" class="btn btn-primary btn-lg float-right mt-2 b-3">Voir le site</a>
+      <a href="#" target="_blank" class="bg-danger btn-lg float-right text-white mt-2 b-3">Hors ligne en 2022</a>
   </b-modal>
   </div>
 </template> 

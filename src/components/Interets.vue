@@ -1,49 +1,145 @@
 <template>
-    <div class="container-fluid fixed-top-position"> 
-    <h1 class="mb-5">Intérêts</h1>
-        <div class="row">
-            <div class="col-xl-4 col-md-12 mt-5 mb-5 animate__animated animate__zoomIn">
-                <div class="content"> 
-                    <a href="#">
-                        <div class="content-overlay"></div> <img class="content-image" src="img/code.jpg">
-                        <div class="content-details fadeIn-bottom">
-                            <h3 class="content-title">Développement</h3>
-                            <p class="content-text"><img src="img/gear.png" alt=""></p>
-                        </div>
-                    </a> 
-                </div>
-            </div>
-            <div class="col-xl-4 col-md-12 mt-5 mb-5 animate__animated animate__zoomIn">
-                <div class="content"> <a href="#">
-                        <div class="content-overlay"></div> <img class="content-image" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1557246502/test_zoom.jpg">
-                        <div class="content-details fadeIn-bottom">
-                            <h3 class="content-title">Randonnée</h3>
-                            <p class="content-text"><img src="img/adventurer.png" alt=""></p>
-                        </div>
-                    </a> 
-                </div>
-            </div>
-            <div class="col-xl-4 col-md-12 mt-5 mb-5 animate__animated animate__zoomIn">
-                <div class="content"> <a href="#">
-                        <div class="content-overlay"></div> <img class="content-image" src="img/movie-918655_640.jpg" style="height:225px">
-                        <div class="content-details fadeIn-bottom">
-                            <h3 class="content-title">Cinéma</h3>
-                            <p class="content-text"><img src="img/clapperboard.png" alt=""></p>
-                        </div>
-                    </a> 
-                </div>
-            </div>
+    <div class="container-fluid fixed-top-position pt-150 mb-4">
+      <div class="row justify-content-center">
+        <div class="col-xl-4 col-md-6 mt-5 mb-5" v-for="(interet, index) in interets" :key="index">
+          <div class="interet-card">
+            <a href="#">
+              <img class="interet-image" :src="interet.image" :alt="interet.title" />
+              <div class="interet-overlay"></div>
+              <div class="interet-details">
+                <h3 class="interet-title">{{ interet.title }}</h3>
+                <p class="interet-icon">
+                  <img :src="interet.icon" :alt="'Icone ' + interet.title" />
+                </p>
+              </div>
+            </a>
+          </div>
         </div>
+      </div>
     </div>
-</template>
-
-<script>
-export default {
+  </template>
+  
+  <script>
+  export default {
     name: 'Interets',
-   
-}
-</script>
+    data() {
+      return {
+        interets: [
+          {
+            title: 'Développement',
+            image: 'img/code.jpg',
+            icon: 'img/gear.png'
+          },
+          {
+            title: 'Randonnée',
+            image: 'https://res.cloudinary.com/dxfq3iotg/image/upload/v1557246502/test_zoom.jpg',
+            icon: 'img/adventurer.png'
+          },
+          {
+            title: 'Cinéma',
+            image: 'img/movie-918655_640.jpg',
+            icon: 'img/clapperboard.png'
+          }
+        ]
+      };
+    }
+  };
+  </script>
+  
+  <style lang="scss">
+.interet-card {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: 225px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 8px;
 
-<style scoped lang="scss">
-@import '../assets/interets.scss';
-</style>
+  a {
+    display: block;
+    position: relative;
+    height: 100%;
+  }
+
+  .interet-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.4s ease;
+    z-index: 0;
+  }
+
+  .interet-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    border-radius: 8px;
+    z-index: 1;
+  }
+
+  .interet-details {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+
+    .interet-title {
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      font-weight: 500;
+      margin-bottom: 0.5em;
+    }
+
+    .interet-icon img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &:hover .interet-overlay {
+    opacity: 1;
+  }
+
+  &:hover .interet-details {
+    opacity: 1;
+    top: 50%;
+  }
+
+  &:hover .interet-image {
+    transform: scale(1.05);
+  }
+}
+
+/* ✅ Adaptation mobile */
+@media (max-width: 768px) {
+  .interet-card .interet-overlay {
+    opacity: 1 !important;
+    background: rgba(0, 0, 0, 0.5) !important;
+  }
+
+  .interet-card .interet-details {
+    opacity: 1 !important;
+    top: 50% !important;
+  }
+
+  .interet-card .interet-image {
+    transform: none !important;
+  }
+}
+
+
+  </style>
+  

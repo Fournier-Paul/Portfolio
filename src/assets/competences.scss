@@ -14,7 +14,27 @@
   }
   
   .arrowImg4 {
-    border: 3px solid #4F5B93;
+    border: 3px solid #007BFF;
+    border-radius: 50px;
+  }
+  .arrowImg5 {
+    border: 3px solid #DC3545;
+    border-radius: 50px;
+  }
+  .arrowImg6 {
+    border: 3px solid #6C757D;
+    border-radius: 50px;
+  }
+  .arrowImg7 {
+    border: 3px solid #28A745;
+    border-radius: 50px;
+  }
+  .arrowImg8 {
+    border: 3px solid #FF9CB1;
+    border-radius: 50px;
+  }
+  .arrowImg9 {
+    border: 3px solid #8E44AD;
     border-radius: 50px;
   }
   
@@ -107,6 +127,24 @@
         animation: loading-2 1.5s linear forwards 1.8s;
       }
     }
+    &.purple {
+      .progress-bar {
+        border-color: #8E44AD;
+      }
+  
+      .progress-left .progress-bar {
+        animation: loading-8 1.5s linear forwards 1.8s;
+      }
+    }
+    &.rose {
+      .progress-bar {
+        border-color: #FF9CB1;
+      }
+  
+      .progress-left .progress-bar {
+        animation: loading-9 1.5s linear forwards 1.8s;
+      }
+    }
   
     &.orange {
       .progress-bar {
@@ -117,10 +155,55 @@
         animation: loading-3 1s linear forwards 1.8s;
       }
     }
+    &.blue2 {
+      .progress-bar {
+        border-color: #007BFF;
+      }
+  
+      .progress-left .progress-bar {
+        animation: loading-6 1s linear forwards 1.8s;
+      }
+    }
+    &.red {
+      .progress-bar {
+        border-color: #DC3545;
+      }
+  
+      .progress-left .progress-bar {
+        animation: loading-7 1s linear forwards 1.8s;
+      }
+    }
+    &.grey {
+      .progress-bar {
+        border-color: #6C757D;
+      }
+  
+      .progress-left .progress-bar {
+        animation: loading-6 1s linear forwards 1.8s;
+      }
+    }
+    &.green {
+      .progress-bar {
+        border-color: #28A745;
+      }
+  
+      .progress-left .progress-bar {
+        animation: loading-6 1s linear forwards 1.8s;
+      }
+    }
   
     &.violet {
       .progress-bar {
         border-color: #4F5B93;
+      }
+  
+      .progress-left .progress-bar {
+        animation: loading-4 0.4s linear forwards 1.8s;
+      }
+    }
+    &.yellow {
+      .progress-bar {
+        border-color: #f7df1e;
       }
   
       .progress-left .progress-bar {
@@ -186,6 +269,65 @@
   }
   
   @keyframes loading-5 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      -webkit-transform: rotate(126deg);
+      transform: rotate(126deg);
+    }
+  }
+  @keyframes loading-6 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      -webkit-transform: rotate();
+      transform: rotate(0deg);
+    }
+  }
+  
+  @keyframes loading-7 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      -webkit-transform: rotate(100deg);
+      transform: rotate(0deg);
+    }
+  }
+  
+  @keyframes loading-8 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      -webkit-transform: rotate(90deg);
+      transform: rotate(25deg);
+    }
+  }
+  
+  @keyframes loading-9 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      -webkit-transform: rotate(deg);
+      transform: rotate(40deg);
+    }
+  }
+  
+  @keyframes loading-10 {
     0% {
       -webkit-transform: rotate(0deg);
       transform: rotate(0deg);

@@ -171,7 +171,7 @@ nav.customNav {
   width: 100%;
   text-transform: uppercase;
   top: 280px;
-  height: 64px;
+  height: 7vh;
 }
 
 section#navbar {
@@ -181,7 +181,7 @@ section#navbar {
 div.navbar.navbar-expand-lg.fixed-top.d-flex.justify-content-center {
   position: absolute;
   background-color: #28415b;
-  height: 280px;
+  height: 30vh;
 }
 
 div.menu-button.menu-button-active {

@@ -75,3 +75,65 @@
   .fadeIn-bottom {
     top: 80%;
   }
+
+  .interet-card {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 8px;
+  
+    a {
+      display: block;
+      position: relative;
+    }
+  
+    .interet-image {
+      width: 100%;
+      display: block;
+      border-radius: 8px;
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    }
+  
+    .interet-overlay {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.7);
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+      border-radius: 8px;
+    }
+  
+    .interet-details {
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+  
+      .interet-title {
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        font-weight: 500;
+        margin-bottom: 0.5em;
+      }
+  
+      .interet-icon img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  
+    &:hover .interet-overlay,
+    &:hover .interet-details {
+      opacity: 1;
+      top: 50%;
+    }
+  }

@@ -1,6 +1,5 @@
 <template>
-    <div class="container-fluid fixed-top-position">
-    <h1 class="mb-5">Diplômes</h1>
+    <div class="container-fluid fixed-top-position pt-150">
    
         <div class="row">
             

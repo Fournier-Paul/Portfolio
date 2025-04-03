@@ -19,7 +19,7 @@ export default [
     {path: '/interets', component: Interets},
     {path: '/a-propos',
     components: {
-        default: Accueil //Vue component
+        default: Accueil
     },
 },
     { path: '/', redirect: '/a-propos' }

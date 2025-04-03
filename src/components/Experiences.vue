@@ -1,10 +1,31 @@
 <template>
-<div class="container-fluid fixed-top-position"> 
-<h1 class="mb-5">Experiences</h1>
+<div class="container-fluid fixed-top-position pt-150"> 
     <div class="container">
             <div class="row">
                 <div class="col-md-12 animate__animated animate__zoomIn">
-                    <div class="main-timeline4 mt-5">
+                    <div class="main-timeline4 mb-5">
+                        <div class="timeline">
+                            <a href="#" class="timeline-content pointer-events">
+                                <span class="year">2025</span>
+                                <div class="inner-content">
+                                    <h3 class="title">Formation en alternance</h3>
+                                    <p class="description">
+                                        <span class="font-weight-bold">2023 - 2025</span><br>Expert en architectures systèmes, réseaux et sécurité informatique
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="timeline">
+                            <a href="#" class="timeline-content pointer-events">
+                                <span class="year">2021</span>
+                                <div class="inner-content">
+                                    <h3 class="title">Formation en alternance</h3>
+                                    <p class="description">
+                                        Concepteur développeur d'applications
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
                         <div class="timeline">
                             <a href="#" class="timeline-content pointer-events">
                                 <span class="year">2021</span>

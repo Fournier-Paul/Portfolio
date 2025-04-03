@@ -1,19 +1,18 @@
 <template>
-  <div class="container-fluid fixed-top-position">
+  <div class="container-fluid fixed-top-position pt-150">
     <form class="contact-form" @submit.prevent="sendEmail">
       <div class="row">
         <div class="col-12">
-          <h1 class="mb-5">Contacts</h1>
           <div v-if="alertsuccess" class="alert alert-success">Votre message à bien été envoyer</div>
           </div>
             <div class="col-md-5 animate__animated animate__zoomIn mt-4">
               <h4 class="ml-5 text-left">Informations de contact</h4>
               <h4 class="h5 mt-5 ml-5 text-left">Adresse e-mail</h4>
-              <p class="text-left ml-5">paul.fournier.3314@gmail.com</p>
+              <p class="text-left ml-5">contact@paul-fournier.dev</p>
               <h4 class="h5 mt-5 ml-5 text-left">Téléphone</h4>
               <p class="text-left ml-5">06 20 83 15 42</p>
             </div>
-            <div class="col-md-3 animate__animated animate__zoomIn mt-3">
+            <div class="col-md-3 animate__animated animate__zoomIn mt-3 ml-4 ml-md-5">
                 <div class="form-group">
                   <input type="text" v-model="name" name="name" class="form-control" placeholder="Votre nom *" required="required" data-error="Votre nom est requis">
                   <div class="help-block with-errors"></div>
@@ -31,7 +30,7 @@
                   <div class="help-block with-errors"></div>
                   </div>
                 </div>
-                <div class="col-md-11 mt-3 animate__animated animate__zoomIn">
+                <div class="col-md-11 mt-3 animate__animated animate__zoomIn ml-5">
                 <input type="submit" class="btn btn-success btn-send btn-lg font-weight-bold rounded float-right p-3 mb-5" value="Envoyer">
               </div>
             </div>

@@ -407,7 +407,7 @@ a {
     &:before {
       content: "";
       width: 5px;
-      height: 70%;
+      height: 100%;
       background: #333;
       position: absolute;
       top: 70px;
@@ -524,7 +524,7 @@ a {
             right: auto;
             left: 0;
             border-left: none;
-            border-right: 20px solid #f54957;
+            border-right: 20px solid #7cba01;
             transform: rotate(-45deg);
           }
         }
@@ -715,3 +715,6 @@ a {
   .pointer-events {
     pointer-events: none;
   }
+
+
+  

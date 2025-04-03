@@ -1,17 +1,98 @@
 <template>
-  <div class="container-fluid fixed-top-position"> 
+  <div class="container-fluid fixed-top-position pt-150"> 
     
-    <div class="row">
-      <div class="col-md-12 mb-3">
-        <h1>Portfolio</h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12 mb-5">
-        <p class="font-italic">Quelques exemples du travail que je suis capable de fournir dans le domaine du développement web.</p>
-      </div>
-    </div>
       <div class="row">
+        <div class="col-xl-4 col-lg-6 col-md-6 col-xs-12 d-flex justify-content-center animate__animated animate__zoomIn mb-5">
+          <div v-on:click="toggleModaleDriftFrance" class="btn" v-b-modal.modal-tall7>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="../../public/img/drift.png" alt="Drift France">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold font-italic mt-2">Drift France</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-6 col-xs-12 d-flex justify-content-center animate__animated animate__zoomIn mb-5">
+          <div v-on:click="toggleModaleLiveDriftFrance" class="btn" v-b-modal.modal-tall8>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="../../public/img/live-driftfrance.png" alt="Live Drift France">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold font-italic mt-2">Live Drift France</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-6 col-xs-12 d-flex justify-content-center animate__animated animate__zoomIn mb-5">
+          <div v-on:click="toggleModaleEndurance" class="btn" v-b-modal.modal-tall9>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="../../public/img/endurance.png" alt="Endurance24">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold font-italic mt-2">Endurance24</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-6 col-xs-12 d-flex justify-content-center animate__animated animate__zoomIn mb-5">
+          <div v-on:click="toggleShopDrivn" class="btn" v-b-modal.modal-tall10>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="../../public/img/drivn-site.png" alt="Shop Driv'n motorsport">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold font-italic mt-2">Shop Driv'n motorsport</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-6 col-xs-12 d-flex justify-content-center animate__animated animate__zoomIn mb-5">
+          <div v-on:click="toggleShopDrivn" class="btn" v-b-modal.modal-tall10>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="../../public/img/signture-mail.png" alt="Signature Mail">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold font-italic mt-2">Signature Mail</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-6 col-xs-12 d-flex justify-content-center animate__animated animate__zoomIn mb-5">
+          <div v-on:click="toggleModaleCaniCottage" class="btn" v-b-modal.modal-tall11>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="../../public/img/cani-cottage.png" alt="Cani-Cottage">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold font-italic mt-2">Cani Cottage</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-6 col-xs-12 d-flex justify-content-center animate__animated animate__zoomIn mb-5">
+          <div v-on:click="toggleModaleAutowebbb" class="btn" v-b-modal.modal-tall12>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="../../public/img/autowebbb.png" alt="Autowebbb">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold font-italic mt-2">Autowebbb</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-6 col-xs-12 d-flex justify-content-center animate__animated animate__zoomIn mb-5">
+          <div v-on:click="toggleModaleSteveLeiber" class="btn" v-b-modal.modal-tall13>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="../../public/img/steve.png" alt="Steve Leiber">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold font-italic mt-2">Steve Leiber</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-6 col-xs-12 d-flex justify-content-center animate__animated animate__zoomIn mb-5">
+          <div v-on:click="toggleModaleJulienGerbi" class="btn" v-b-modal.modal-tall14>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="../../public/img/juliengerbi.png" alt="Julien Gerbi">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold font-italic mt-2">Julien Gerbi</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="col-xl-4 col-lg-6 col-md-6 col-xs-12 d-flex justify-content-center animate__animated animate__zoomIn mb-5">
           <div v-on:click="toggleModaleGalerieRiva" class="btn" v-b-modal.modal-tall>
             <div class="card" style="width: 18rem;">
@@ -81,13 +162,21 @@
           </div>
         </div>
       </div>
-        <unbeemodale v-bind:reveleunbee="reveleunbee" v-bind:toggleModaleUnbee="toggleModaleUnbee"></unbeemodale>
-        <symbnbmodale v-bind:revelesymbnb="revelesymbnb" v-bind:toggleModaleSymbnb="toggleModaleSymbnb"></symbnbmodale>
-        <velocitymodale v-bind:revelevelocity="revelevelocity" v-bind:toggleModaleVeloCity="toggleModaleVeloCity"></velocitymodale>
-        <apimeteomodale v-bind:reveleapimeteo="reveleapimeteo" v-bind:toggleModaleApiMeteo="toggleModaleApiMeteo"></apimeteomodale>
-        <panterestmodale v-bind:revelepanterest="revelepanterest" v-bind:toggleModalePanterest="toggleModalePanterest"></panterestmodale>
-        <stulidaymodale v-bind:revelestuliday="revelestuliday" v-bind:toggleModaleStuliday="toggleModaleStuliday"></stulidaymodale>
-        <galerierivamodale v-bind:revelegalerieriva="revelegalerieriva" v-bind:toggleModaleGalerieRiva="toggleModaleGalerieRiva"></galerierivamodale>
+      <unbeemodale :reveleunbee="reveleunbee" :toggleModaleUnbee="toggleModaleUnbee" />
+    <symbnbmodale :revelesymbnb="revelesymbnb" :toggleModaleSymbnb="toggleModaleSymbnb" />
+    <velocitymodale :revelevelocity="revelevelocity" :toggleModaleVeloCity="toggleModaleVeloCity" />
+    <apimeteomodale :reveleapimeteo="reveleapimeteo" :toggleModaleApiMeteo="toggleModaleApiMeteo" />
+    <panterestmodale :revelepanterest="revelepanterest" :toggleModalePanterest="toggleModalePanterest" />
+    <stulidaymodale :revelestuliday="revelestuliday" :toggleModaleStuliday="toggleModaleStuliday" />
+    <galerierivamodale :revelegalerieriva="revelegalerieriva" :toggleModaleGalerieRiva="toggleModaleGalerieRiva" />
+    <driftfrancemodale :reveledriftfrance="reveledriftfrance" :toggleModaleDriftFrance="toggleModaleDriftFrance" />
+    <livedriftfrancemodale :revelelivedriftfrance="revelelivedriftfrance" :toggleModaleLiveDriftFrance="toggleModaleLiveDriftFrance" />
+    <endurancemodale :reveleendurance="reveleendurance" :toggleModaleEndurance="toggleModaleEndurance" />
+    <shopdrivnmodale :reveleshopdrivn="reveleshopdrivn" :toggleShopDrivn="toggleShopDrivn" />
+    <canicottagemodale :revelecanicottage="revelecanicottage" :toggleModaleCaniCottage="toggleModaleCaniCottage" />
+    <autowebbbmodale :reveleautowebbb="reveleautowebbb" :toggleModaleAutowebbb="toggleModaleAutowebbb" />
+    <steveleibermodale :revelesteveleiber="revelesteveleiber" :toggleModaleSteveLeiber="toggleModaleSteveLeiber" />
+    <juliengerbimodale :revelejuliengerbi="revelejuliengerbi" :toggleModaleJulienGerbi="toggleModaleJulienGerbi" />
     </div>
 </template>
 
@@ -99,6 +188,14 @@ import ModaleVeloCity from './modale/ModaleVeloCity'
 import ModaleStuliday from './modale/ModaleStuliday'
 import ModaleApiMeteo from './modale/ModaleApiMeteo'
 import ModalePanterest from './modale/ModalePanterest'
+import ModaleDriftFrance from './modale/ModaleDriftFrance'
+import ModaleLiveDriftFrance from './modale/ModaleLiveDriftFrance'
+import ModaleEndurance from './modale/ModaleEndurance'
+import ModaleShopdrivn from './modale/ModaleShopDrivn'
+import ModaleCaniCottage from './modale/ModaleCaniCottage'
+import ModaleAutowebbb from './modale/ModaleAutowebbb'
+import ModaleSteveLeiber from './modale/ModaleSteveLeiber'
+import ModaleJulienGerbi from './modale/ModaleJulienGerbi'
 
 export default {
   name: 'Portfolio',
@@ -111,30 +208,62 @@ export default {
       revelestuliday: false,
       reveleapimeteo: false,
       revelepanterest: false,
+      reveledriftfrance: false,
+      revelelivedriftfrance: false,
+      reveleendurance: false,
+      reveleshopdrivn: false,
+      revelecanicottage: false,
+      reveleautowebbb: false,
+      revelesteveleiber: false,
+      revelejuliengerbi: false,
     }
   },
   methods: {
-    toggleModaleUnbee: function(){
-      this.reveleunbee = !this.reveleunbee
-    },
-    toggleModaleSymbnb: function(){
-      this.revelesymbnb = !this.revelesymbnb
-    },
-    toggleModaleGalerieRiva: function(){
-      this.revelegalerieriva = !this.revelegalerieriva
-    },
-    toggleModaleVeloCity: function(){
-      this.revelevelocity = !this.revelevelocity
-    },
-    toggleModaleApiMeteo: function(){
-      this.reveleapimeteo = !this.reveleapimeteo
-    },
-    toggleModalePanterest: function(){
-      this.revelepanterest = !this.revelepanterest
-    },
-    toggleModaleStuliday: function(){
-      this.revelestuliday = !this.revelestuliday
-    }
+    toggleModaleUnbee: function() {
+    this.reveleunbee = !this.reveleunbee
+  },
+  toggleModaleSymbnb: function() {
+    this.revelesymbnb = !this.revelesymbnb
+  },
+  toggleModaleGalerieRiva: function() {
+    this.revelegalerieriva = !this.revelegalerieriva
+  },
+  toggleModaleVeloCity: function() {
+    this.revelevelocity = !this.revelevelocity
+  },
+  toggleModaleApiMeteo: function() {
+    this.reveleapimeteo = !this.reveleapimeteo
+  },
+  toggleModalePanterest: function() {
+    this.revelepanterest = !this.revelepanterest
+  },
+  toggleModaleStuliday: function() {
+    this.revelestuliday = !this.revelestuliday
+  },
+  toggleModaleDriftFrance: function() {
+    this.reveledriftfrance = !this.reveledriftfrance
+  },
+  toggleModaleLiveDriftFrance: function() {
+    this.revelelivedriftfrance = !this.revelelivedriftfrance
+  },
+  toggleModaleEndurance: function() {
+    this.reveleendurance = !this.reveleendurance
+  },
+  toggleShopDrivn: function() {
+    this.reveleshopdrivn = !this.reveleshopdrivn
+  },
+  toggleModaleCaniCottage: function() {
+    this.revelecanicottage = !this.revelecanicottage
+  },
+  toggleModaleAutowebbb: function() {
+    this.reveleautowebbb = !this.reveleautowebbb
+  },
+  toggleModaleSteveLeiber: function() {
+    this.revelesteveleiber = !this.revelesteveleiber
+  },
+  toggleModaleJulienGerbi: function() {
+    this.revelejuliengerbi = !this.revelejuliengerbi
+  }
   },
   components: {
     'unbeemodale' : ModaleUnbee,
@@ -143,7 +272,15 @@ export default {
     'velocitymodale' : ModaleVeloCity,
     'stulidaymodale' : ModaleStuliday,
     'apimeteomodale' : ModaleApiMeteo,
-    'panterestmodale' : ModalePanterest
+    'panterestmodale' : ModalePanterest,
+    'driftfrancemodale' : ModaleDriftFrance,
+    'livedriftfrancemodale' : ModaleLiveDriftFrance,
+    'endurancemodale' : ModaleEndurance,
+    'shopdrivnmodale' : ModaleShopdrivn,
+    'canicottagemodale' : ModaleCaniCottage,
+    'autowebbbmodale' : ModaleAutowebbb,
+    'steveleibermodale' : ModaleSteveLeiber,
+    'juliengerbimodale' : ModaleJulienGerbi,
   }
 }
 </script>
@@ -153,4 +290,3 @@ export default {
 @import '../assets/modals.scss';
 
 </style>
-
