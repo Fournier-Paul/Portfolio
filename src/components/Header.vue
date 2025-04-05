@@ -18,7 +18,7 @@
                 <div class="container-fluid">
                     <div  class="col-xl-12">
                         <button id="menu-button" class="menu-button mt-1 mb-1" v-on:click="active = !active"><img src="../../public/img/menu1.svg" class="menu-svg" alt=""></button>
-                        <ul v-if="active" class="menu-list mt-3 ">
+                        <ul ref="menuMobile" v-if="active" class="menu-list mt-3 ">
                             <li class="inline-pad hvr-underline-from-center nav-link">
                                 <router-link @click.native="closeMenuMobile" to="/a-propos" class="moove-margin">à propos</router-link>
                             </li>
@@ -68,7 +68,7 @@ export default {
             active: true,
             typeValue: '',
             typeStatus: false,
-            typeArray: ['Full-Stack Junior', 'Symfony / Vue.js', 'PHP / JS', ''],
+            typeArray: ['Full-Stack', 'DevOps', 'PHP / JS', ''],
             typingSpeed: 200,
             erasingSpeed: 100,
             newTextDelay: 2000,
@@ -80,17 +80,27 @@ export default {
         window.addEventListener('scroll', this.handleScroll);
         window.addEventListener('scroll', this.handleScrollFixed);
         window.addEventListener('resize', this.screenWidth);
+        document.addEventListener('click', this.clickOutsideMenu);
         if (screen.width <= 1081){
-            this.active = !this.active
+        this.active = false;
         }
         setTimeout(this.typeText, this.newTextDelay + 200);
-    },
+  },
     destroyed () {
         window.removeEventListener('scroll', this.handleScroll);
         window.removeEventListener('scroll', this.handleScrollFixed);
         window.removeEventListener('resize', this.screenWidth);
+        document.removeEventListener('click', this.clickOutsideMenu);
     },
     methods: {
+        clickOutsideMenu(event) {
+            const menu = this.$refs.menuMobile;
+            const button = document.getElementById("menu-button");
+            
+            if (menu && !menu.contains(event.target) && !button.contains(event.target) && window.innerWidth <= 1081) {
+                this.active = false;
+      }
+    },
         closeMenuMobile() {
         if (window.innerWidth <= 1081) {
             this.active = false;
