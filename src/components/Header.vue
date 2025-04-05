@@ -18,16 +18,41 @@
                 <div class="container-fluid">
                     <div  class="col-xl-12">
                         <button id="menu-button" class="menu-button mt-1 mb-1" v-on:click="active = !active"><img src="../../public/img/menu1.svg" class="menu-svg" alt=""></button>
-                    <ul v-if="active" class="menu-list mt-3 ">
-                        <li class="inline-pad hvr-underline-from-center nav-link"><router-link to="/a-propos" class="moove-margin">à propos</router-link></li><span class="pr-5"></span>
-                        <li class="inline-pad hvr-underline-from-center nav-link"><router-link to="/services" class="moove-margin">Services</router-link></li><span class="pr-5"></span>
-                        <li class="inline-pad hvr-underline-from-center nav-link"><router-link to="/portfolio" class="moove-margin">Portfolio</router-link></li><span class="pr-5"></span>
-                        <li class="inline-pad hvr-underline-from-center nav-link"><router-link to="/competences" class="moove-margin">Compétences</router-link></li><span class="pr-5"></span>
-                        <li class="inline-pad hvr-underline-from-center nav-link"><router-link to="/experiences" class="moove-margin">expériences</router-link></li><span class="pr-5"></span>
-                        <li class="inline-pad hvr-underline-from-center nav-link"><router-link to="/diplomes" class="moove-margin">diplômes</router-link></li><span class="pr-5"></span>
-                        <li class="inline-pad hvr-underline-from-center nav-link"><router-link to="/interets" class="moove-margin">intérêts</router-link></li><span class="pr-5"></span>
-                        <li class="inline-pad hvr-underline-from-center nav-link"><router-link to="/contacts" class="moove-margin">contacts</router-link></li><span class="pr-5"></span>
-                    </ul>
+                        <ul v-if="active" class="menu-list mt-3 ">
+                            <li class="inline-pad hvr-underline-from-center nav-link">
+                                <router-link @click.native="closeMenuMobile" to="/a-propos" class="moove-margin">à propos</router-link>
+                            </li>
+                            <span class="pr-5"></span>
+                            <li class="inline-pad hvr-underline-from-center nav-link">
+                                <router-link @click.native="closeMenuMobile" to="/services" class="moove-margin">Services</router-link>
+                            </li>
+                            <span class="pr-5"></span>
+                            <li class="inline-pad hvr-underline-from-center nav-link">
+                                <router-link @click.native="closeMenuMobile" to="/portfolio" class="moove-margin">Portfolio</router-link>
+                            </li>
+                            <span class="pr-5"></span>
+                            <li class="inline-pad hvr-underline-from-center nav-link">
+                                <router-link @click.native="closeMenuMobile" to="/competences" class="moove-margin">Compétences</router-link>
+                            </li>
+                            <span class="pr-5"></span>
+                            <li class="inline-pad hvr-underline-from-center nav-link">
+                                <router-link @click.native="closeMenuMobile" to="/experiences" class="moove-margin">expériences</router-link>
+                            </li>
+                            <span class="pr-5"></span>
+                            <li class="inline-pad hvr-underline-from-center nav-link">
+                                <router-link @click.native="closeMenuMobile" to="/diplomes" class="moove-margin">diplômes</router-link>
+                            </li>
+                            <span class="pr-5"></span>
+                            <li class="inline-pad hvr-underline-from-center nav-link">
+                                <router-link @click.native="closeMenuMobile" to="/interets" class="moove-margin">intérêts</router-link>
+                            </li>
+                            <span class="pr-5"></span>
+                            <li class="inline-pad hvr-underline-from-center nav-link">
+                                <router-link @click.native="closeMenuMobile" to="/contacts" class="moove-margin">contacts</router-link>
+                            </li>
+                            <span class="pr-5"></span>
+                        </ul>
+
                 </div>
             </div>
         </b-navbar>
@@ -66,6 +91,11 @@ export default {
         window.removeEventListener('resize', this.screenWidth);
     },
     methods: {
+        closeMenuMobile() {
+        if (window.innerWidth <= 1081) {
+            this.active = false;
+        }
+    },
         typeText() {
             if (this.typeArrayIndex < 3){
         if(this.charIndex < this.typeArray[this.typeArrayIndex].length) {
