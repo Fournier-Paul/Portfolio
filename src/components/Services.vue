@@ -11,7 +11,7 @@
             <div class="col-lg-4 col-md-6 text-center animate__animated animate__zoomIn mb-5">
                 <div class="service-box mt-5 mx-auto">
                 <img src="../../public/img/agile.png" class="w-64 mt-5 mb-5" alt="">
-              <h3 class="mb-3">DevOps & Déploiement</h3>
+              <h3 class="mb-3">DevOps</h3>
               <p class="text-muted mb-0">Intégration et déploiement continus (CI/CD), gestion d'infrastructure, monitoring.</p>
             </div>
           </div>

@@ -7,4 +7,18 @@
     padding-bottom: 70px;
 
   }
+
+  html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+
+  @media only screen and (max-width: 768px) {
+    [data-aos] {
+      opacity: 1 !important;
+      transform: none !important;
+      pointer-events: all !important;
+    }
+  }
   

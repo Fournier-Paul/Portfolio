@@ -8,9 +8,9 @@
                             <a href="#" class="timeline-content pointer-events">
                                 <span class="year">2025</span>
                                 <div class="inner-content">
-                                    <h3 class="title">Formation en alternance</h3>
+                                    <h3 class="title">FORMATION EN ALTERNANCE</h3>
                                     <p class="description">
-                                        <span class="font-weight-bold">2023 - 2025</span><br>Expert en architectures systèmes, réseaux et sécurité informatique
+                                        <span class="font-weight-bold">2023 - 2025</span><br>Expert en architectures systèmes, réseaux et sécurité informatique chez Puls Agency.
                                     </p>
                                 </div>
                             </a>
@@ -19,9 +19,9 @@
                             <a href="#" class="timeline-content pointer-events">
                                 <span class="year">2021</span>
                                 <div class="inner-content">
-                                    <h3 class="title">Formation en alternance</h3>
+                                    <h3 class="title">FORMATION EN ALTERNANCE</h3>
                                     <p class="description">
-                                        Concepteur développeur d'applications
+                                        Concepteur développeur d'applications chez Puls Agency.
                                     </p>
                                 </div>
                             </a>

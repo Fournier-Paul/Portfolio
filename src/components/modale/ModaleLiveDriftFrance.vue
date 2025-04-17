@@ -4,7 +4,7 @@
     <h5 class="my-4 text-decoration-underline">Détails :</h5>
     <p class="font-italic">
       Site du Live du Championnat de France de Drift FFSA
-      Récupération du classement en live pendant les courses
+      Récupération du classement en live pendant les courses via la télémétrie
     </p>
       <ul class="list-group">
         <li class="ml-4 mb-3 list-item">Frontend</li>
@@ -40,4 +40,3 @@ export default {
 <style lang="scss">
 @import '../../assets/modals.scss';
 </style>
-
