@@ -39,10 +39,7 @@
   </div>
 </template>
 
-
 <script>
-import emailjs from 'emailjs-com';
-
 export default {
   name: 'Contacts',
   data() {
@@ -54,23 +51,24 @@ export default {
       alertsuccess: false
     };
   },
-  mounted() {
-    emailjs.init(process.env.VUE_APP_EMAILJS_PUBLIC_KEY);
-  },
   methods: {
     sendEmail() {
-      const params = {
+      const formData = {
         name: this.name,
         email: this.email,
         objet: this.objet,
         message: this.message
       };
 
-      emailjs.send(
-        process.env.VUE_APP_EMAILJS_SERVICE_ID,
-        process.env.VUE_APP_EMAILJS_TEMPLATE_ID,
-        params
-      )
+      fetch(process.env.VUE_APP_EMAILJS_SERVICE_ID, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      })
+      .then(res => {
+        if (!res.ok) throw new Error('Erreur lors de l’envoi');
+        return res.json();
+      })
       .then(() => {
         this.alertsuccess = true;
         this.name = '';
@@ -78,14 +76,13 @@ export default {
         this.objet = '';
         this.message = '';
       })
-      .catch((error) => {
-        console.error('Erreur EmailJS :', error);
+      .catch(err => {
+        console.error('Erreur API:', err);
+        // ici tu peux aussi afficher un message d’erreur si tu veux
       });
     }
-
   }
 };
-
 </script>
 
 <style scoped lang="scss">
