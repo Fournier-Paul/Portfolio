@@ -15,20 +15,20 @@
 
       </ul>
       <h5 class="my-4 text-decoration-underline">Téchnologies : </h5>
-      <span class="badge bg-dark text-light mr-2 mb-3">Frameword Symfony</span>
-      <span class="badge bg-dark text-light mr-2 mb-3">CLI</span>
-      <span class="badge bg-dark text-light mr-2 mb-3">Composer</span>
-      <span class="badge bg-dark text-light mr-2 mb-3">Npm</span>
-      <span class="badge bg-php mr-2 mb-3">PHP</span>
-      <span class="badge bg-success text-light mr-2 mb-3">Twig</span>
-      <span class="badge bg-light text-dark mr-2 mb-3">MySql</span>
-      <p><span class="badge bg-warning text-dark mr-2 mb-3">JavaScript</span>
+      <span class="badge bg-dark text-white mr-2 mb-3">Frameword Symfony</span>
+      <span class="badge bg-dark text-white mr-2 mb-3">PHP</span>
+      <span class="badge bg-success text-white mr-2 mb-3">Twig</span>
+      <span class="badge bg-warning text-dark mr-2 mb-3">AJAX</span>
+      <span class="badge bg-warning text-dark mr-2 mb-3">JavaScript</span>
       <span class="badge bg-warning text-dark mr-2 mb-3">Jquery</span>
-      <span class="badge bg-warning text-dark mr-2 mb-3">Webpack</span>
-      <span class="badge bg-sass mr-2 mb-3">Sass</span>
-      <span class="badge bg-bootstrap mr-2 mb-3">Bootstrap</span>
-      <hr>
-      <a href="https://public.paul-fournier-dev.com/" target="_blank" class="btn btn-primary btn-lg float-right mt-2 b-3">Voir le site</a>
+      <span class="badge bg-pink text-dark mr-2 mb-3">MySql</span>
+      <span class="badge bg-primary text-white mr-2 mb-3">Bootstrap</span>
+      <span class="badge bg-primary text-white mr-2 mb-3">Sass</span>
+      <span class="badge bg-danger text-white mr-2 mb-3">CLI</span>
+      <span class="badge bg-danger text-white mr-2 mb-3">Composer</span>
+      <span class="badge bg-danger text-white mr-2 mb-3">Npm</span>
+      <span class="badge bg-danger text-white mr-2 mb-3">Webpack</span>
+      <span class="badge bg-danger text-white mr-2 mb-3">Faker librairie</span>
     </b-modal>
   </div>
 </template> 

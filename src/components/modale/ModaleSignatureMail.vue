@@ -1,19 +1,18 @@
 <template>
     <div class="container fixed-top-position">
-      <b-modal id="modal-tall7"  title="DriftFrance" class="text-center text-white" hide-footer>
+      <b-modal id="modal-tall15"  title="Generateur" class="text-center text-white" hide-footer>
       <h5 class="my-4 text-decoration-underline">Détails :</h5>
       <p class="font-italic">
         Generateur de signature mail "from-scratch"
       </p>
         <ul class="list-group">
-          <li class="ml-4 mb-3 list-item">Selection de template HTML</li>
+          <li class="ml-4 mb-3 list-item">Selection de 5 templates HTML</li>
         </ul>
         <h5 class="my-4 text-decoration-underline">Technologies : </h5>
-        <span class="badge bg-php mr-2 mb-3">PHP</span>
-        <span class="badge bg-dark text-white mr-2 mb-3">JavaScript</span>
-        <span class="badge bg-dark text-white mr-2 mb-3">TailwindCSS</span>
+        <span class="badge bg-dark text-white mr-2 mb-3">PHP</span>
+        <span class="badge bg-warning text-dark mr-2 mb-3">JavaScript</span>
+        <span class="badge bg-primary text-white mr-2 mb-3">TailwindCSS</span>
         <hr>
-        <a href="https://driftfrance.com/" target="_blank" class="btn btn-primary btn-lg float-right mt-2 b-3">Voir le site</a>
         <p class="text-muted mt-4 small">
     *Certaines technologies sensibles ont été volontairement généralisées pour des raisons de sécurité.
   </p>
@@ -25,8 +24,8 @@
   
   
   export default {
-    name: "ModaleDriftFrance",
-    props: ["reveledriftfrance", "toggleModaleDriftFrance"], 
+    name: "ModaleSignatureMail",
+    props: ["revelesignaturemail", "toggleModaleSignatureMail"], 
   
   }
   </script>

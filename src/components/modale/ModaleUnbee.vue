@@ -16,13 +16,13 @@
         <li class="ml-4 mb-3 list-item">Générateur de templates</li>
       </ul>
       <h5 class="my-4 text-decoration-underline">Téchnologies : </h5>
-      <span class="badge bg-php mr-2 mb-3">PHP</span>
-      <span class="badge bg-danger text-light mr-2 mb-3">HTML</span>
-      <span class="badge bg-primary text-light mr-2 mb-3">CSS</span>
-      <span class="badge bg-light text-dark mr-2 mb-3">MySql</span>
+      <span class="badge bg-dark text-white mr-2 mb-3">PHP</span>
+      <span class="badge bg-warning text-dark mr-2 mb-3">AJAX</span>
       <span class="badge bg-warning text-dark mr-2 mb-3">JavaScript</span>
       <span class="badge bg-warning text-dark mr-2 mb-3">Jquery</span>
-      <span class="badge bg-warning text-dark mr-2 mb-3">AJAX</span>
+      <span class="badge bg-pink text-dark mr-2 mb-3">MySql</span>
+      <span class="badge bg-primary text-white mr-2 mb-3">CSS</span>
+      <span class="badge bg-orange text-dark mr-2 mb-3">HTML</span>
       <hr>
       <a v-on:click="toggleUnbee = !toggleUnbee" class="btn btn-primary btn-lg float-right mt-2 b-3">Aperçu du site</a>
     </b-modal>

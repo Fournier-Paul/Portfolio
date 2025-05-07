@@ -15,14 +15,16 @@
         <li class="ml-4 mb-3 list-item">API</li>
       </ul>
       <h5 class="my-4 text-decoration-underline">Téchnologies : </h5>
-      <span class="badge bg-php mr-2 mb-3">Vite.js</span>
-      <span class="badge bg-php mr-2 mb-3">Node.js</span>
-      <span class="badge bg-php mr-2 mb-3">Websocket</span>
+      <span class="badge bg-dark text-white mr-2 mb-3">Node.js</span>
+      <span class="badge bg-warning text-dark mr-2 mb-3">Flux JSON</span>
       <span class="badge bg-warning text-dark mr-2 mb-3">JavaScript</span>
-      <p><span class="badge bg-warning text-dark mr-2 mb-3">Flux JSON</span>
-      <span class="badge bg-warning text-dark mr-2 mb-3">PostCss</span>
-      <span class="badge bg-bootstrap mr-2 mb-3">TailwindCSS</span></p>
-      <hr>
+      <span class="badge bg-warning text-dark mr-2 mb-3">Websocket</span>
+      <span class="badge bg-primary text-white mr-2 mb-3">PostCss</span>
+      <span class="badge bg-primary text-white mr-2 mb-3">TailwindCSS</span>
+      <span class="badge bg-danger text-white mr-2 mb-3">Vite.js</span>
+      <p class="text-muted mt-4 small">
+        *Certaines technologies sensibles ont été volontairement généralisées pour des raisons de sécurité.
+      </p>
   </b-modal>
   </div>
 </template> 

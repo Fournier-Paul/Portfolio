@@ -9,15 +9,13 @@
         <li class="ml-4 mb-3 list-item">Base de données</li>
       </ul>
       <h5 class="my-4 text-decoration-underline">Téchnologies : </h5>
-      <span class="badge bg-danger text-light mr-2 mb-3">HTML</span>
-      <span class="badge bg-primary text-light mr-2 mb-3">CSS</span>
       <span class="badge bg-warning text-dark mr-2 mb-3">JavaScript</span>
       <span class="badge bg-warning text-dark mr-2 mb-3">Jquery</span>
-      <span class="badge bg-php text-white mr-2 mb-3">PHP</span>
-      <span class="badge bg-light text-dark mr-2 mb-3">MySql</span>
-      <span class="badge bg-bootstrap mr-2 mb-3">Bootstrap</span>
-      <hr>
-      <a href="https://stuliday.paul-fournier-dev.com" target="_blank" class="btn btn-primary btn-lg float-right mt-2 b-3">Voir le site</a>
+      <span class="badge bg-dark text-white mr-2 mb-3">PHP</span>
+      <span class="badge bg-pink text-dark mr-2 mb-3">MySql</span>
+      <span class="badge bg-primary text-white mr-2 mb-3">Bootstrap</span>
+      <span class="badge bg-primary text-white mr-2 mb-3">CSS</span>
+      <span class="badge bg-orange text-dark mr-2 mb-3">HTML</span>
   </b-modal>
   </div>
 </template> 

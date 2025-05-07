@@ -15,19 +15,17 @@
         <li class="ml-4 mb-3 list-item">API la poste</li>
       </ul>
       <h5 class="my-4 text-decoration-underline">Téchnologies : </h5>
-      <span class="badge bg-php mr-2 mb-3">PHP</span>
-      <span class="badge bg-dark text-light mr-2 mb-3">htaccess</span>
-      <span class="badge bg-light text-dark mr-2 mb-3">MySql</span>
-      <span class="badge bg-warning text-dark mr-2 mb-3">JavaScript</span>
-      <span class="badge bg-warning text-dark mr-2 mb-3">Jquery</span>
+      <span class="badge bg-dark text-white mr-2 mb-3">PHP</span>
       <span class="badge bg-warning text-dark mr-2 mb-3">AJAX</span>
       <span class="badge bg-warning text-dark mr-2 mb-3">API la poste</span>
-      <p><span class="badge bg-warning text-dark mr-2 mb-3">Gulp.js</span>
+      <span class="badge bg-warning text-dark mr-2 mb-3">JavaScript</span>
+      <span class="badge bg-warning text-dark mr-2 mb-3">Jquery</span>
       <span class="badge bg-warning text-dark mr-2 mb-3">JSON</span>
-      <span class="badge bg-sass mr-2 mb-3">Sass</span>
-      <span class="badge bg-bootstrap mr-2 mb-3">Bootstrap</span></p>
-      <hr>
-      <a href="#" target="_blank" class="bg-danger btn-lg float-right text-white mt-2 b-3">Hors ligne en 2022</a>
+      <span class="badge bg-pink text-dark mr-2 mb-3">MySql</span>
+      <span class="badge bg-primary text-white mr-2 mb-3">Bootstrap</span>
+      <span class="badge bg-primary text-white mr-2 mb-3">Sass</span>
+      <span class="badge bg-danger text-white mr-2 mb-3">Gulp.js</span>
+      <span class="badge bg-danger text-white mr-2 mb-3">htaccess</span>
   </b-modal>
   </div>
 </template> 

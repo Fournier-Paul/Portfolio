@@ -12,9 +12,7 @@
       <span class="badge bg-success text-white mr-2 mb-3">VueJs</span>
       <span class="badge bg-warning text-dark mr-2 mb-3">API OpenWeather</span>
       <span class="badge bg-primary text-white mr-2 mb-3">CSS</span>
-      <span class="badge bg-bootstrap mr-2 mb-3">Bootstrap</span>
-      <hr>
-      <a href="https://api-meteo.paul-fournier-dev.com/" target="_blank" class="btn btn-primary btn-lg float-right mt-2 b-3">Voir le site</a>
+      <span class="badge bg-primary text-white mr-2 mb-3">Bootstrap</span>
   </b-modal>
   </div>
 </template> 
