@@ -27,18 +27,18 @@
         interets: [
           {
             title: 'Développement',
-            image: 'img/code.jpg',
-            icon: 'img/gear.png'
+            image: 'img/interests/code.jpg',
+            icon: 'img/picto/gear.png'
           },
           {
             title: 'Randonnée',
-            image: 'https://res.cloudinary.com/dxfq3iotg/image/upload/v1557246502/test_zoom.jpg',
-            icon: 'img/adventurer.png'
+            image: 'img/interests/test_zoom.jpg',
+            icon: 'img/picto/adventurer.png'
           },
           {
             title: 'Cinéma',
-            image: 'img/movie-918655_640.jpg',
-            icon: 'img/clapperboard.png'
+            image: 'img/interests/movie-918655_640.jpg',
+            icon: 'img/picto/clapperboard.png'
           }
         ]
       };

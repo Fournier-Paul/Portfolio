@@ -44,10 +44,6 @@
                             </li>
                             <span class="pr-5"></span>
                             <li class="inline-pad hvr-underline-from-center nav-link">
-                                <router-link @click.native="closeMenuMobile" to="/interets" class="moove-margin">intérêts</router-link>
-                            </li>
-                            <span class="pr-5"></span>
-                            <li class="inline-pad hvr-underline-from-center nav-link">
                                 <router-link @click.native="closeMenuMobile" to="/contacts" class="moove-margin">contacts</router-link>
                             </li>
                             <span class="pr-5"></span>

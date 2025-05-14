@@ -1,6 +1,6 @@
 <template>
     <div class="container-fluid fixed-top-position pt-150">
-      <div class="row px-3">
+      <div class="row px-3 animate__animated animate__zoomIn">
         
         <div class="col-md-6 col-xs-12 mt-4">
           <div class="card h-100">

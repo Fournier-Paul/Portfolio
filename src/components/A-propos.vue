@@ -10,7 +10,7 @@
           Création de site web, d'infrastrucutre informatique, d'automatisation et de mise en place de système de sécurité.</p>
         <p class="text-center text-sm-left h5 mt-3">Je souhaite intégrer une entreprise dans laquelle je pourrais évoluer, mettre en pratique mes connaissances et progresser avec celle des autres. </p>
         <div class="text-center text-sm-left mt-5">
-        <a href="img/CV-Paul-Fournier-Developpeur-Web.pdf" class="btn btn-lg btn-light text-left font-weight-bold rounded p-3 mb-5" download>Consulter mon CV</a> 
+        <a href="docs/CV-Paul-Fournier-Developpeur-Web.pdf" class="btn btn-lg btn-primary text-left font-weight-bold rounded p-3 ml-2 mb-5" download>Consulter mon CV</a> 
         <router-link to="/contacts" class="btn btn-lg btn-primary text-left font-weight-bold rounded p-3 ml-2 mb-5">Me contacter</router-link>
       </div>
       <div class="offset-2"></div>

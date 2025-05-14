@@ -13,7 +13,7 @@
                     <div class="progress-value">2 ans</div>
                 </div>
                 <p class="mt-3 h5 mb-5">Automatisation </p>
-                <img id="scrool-anim" src="img/arrow48.png" class="arrowImg4" />
+                <img id="scrool-anim" src="img/picto/arrow48.png" class="arrowImg4" />
             </a>
             </div>
             <div class="col-md-3 col-sm-6 mt-5 mb-5 animate__animated animate__zoomIn flex d-flex">
@@ -28,7 +28,7 @@
                     <div class="progress-value">2 ans</div>
                 </div>
                 <p class="mt-3 h5 mb-5">Sécurité</p>
-                <img id="scrool-anim" src="img/arrow48.png" class="arrowImg5" />
+                <img id="scrool-anim" src="img/picto/arrow48.png" class="arrowImg5" />
             </a>
             </div>
             <div class="col-md-3 col-sm-6 mt-5 mb-5 animate__animated animate__zoomIn flex d-flex">
@@ -43,7 +43,7 @@
                     <div class="progress-value">2 ans</div>
                 </div>
                 <p class="mt-3 h5 mb-5">Cloud</p>
-                <img id="scrool-anim" src="img/arrow48.png" class="arrowImg6" />
+                <img id="scrool-anim" src="img/picto/arrow48.png" class="arrowImg6" />
             </a>
             </div>
             <div class="col-md-3 col-sm-6 mt-5 mb-5 animate__animated animate__zoomIn flex d-flex">
@@ -58,7 +58,7 @@
                     <div class="progress-value">2 ans</div>
                 </div>
                 <p class="mt-3 h5 mb-5">Réseau</p>
-                <img id="scrool-anim" src="img/arrow48.png" class="arrowImg7" />
+                <img id="scrool-anim" src="img/picto/arrow48.png" class="arrowImg7" />
             </a>
             </div>
             <div class="col-md-3 col-sm-6 mt-5 mb-5 animate__animated animate__zoomIn flex d-flex">
@@ -73,7 +73,7 @@
                     <div class="progress-value">4 ans</div>
                 </div>
                     <p class="mt-3 h5 mb-5">Conception</p>
-                    <img src="img/arrow48.png" class="arrowImg9"/>
+                    <img src="img/picto/arrow48.png" class="arrowImg9"/>
             </a>
             </div>
             <div class="col-md-3 col-sm-6 mt-5 mb-5 animate__animated animate__zoomIn flex d-flex">
@@ -88,7 +88,7 @@
                     <div class="progress-value">7 ans</div>
                 </div>
                 <p class="mt-3 h5 mb-5">Base de données</p>
-                <img id="scrool-anim" src="img/arrow48.png" class="arrowImg8" />
+                <img id="scrool-anim" src="img/picto/arrow48.png" class="arrowImg8" />
             </a>
             </div>
             <div class="col-md-3 col-sm-6 mt-5 mb-5 animate__animated animate__zoomIn flex d-flex">
@@ -103,7 +103,7 @@
                     <div class="progress-value">7 ans</div>
                 </div>
                     <p class="mt-3 h5 mb-5">JavaScript</p>
-                    <img src="img/arrow48.png" class="arrowImg3"/>
+                    <img src="img/picto/arrow48.png" class="arrowImg3"/>
             </a>
             </div>
             <div class="col-md-3 col-sm-6 mt-5 mb-5 animate__animated animate__zoomIn flex d-flex">
@@ -118,7 +118,7 @@
                     <div class="progress-value">7 ans</div>
                 </div>
                     <p class="mt-3 h5 mb-5">PHP</p>
-                    <img src="img/arrow48.png" class="arrowImg4"/>
+                    <img src="img/picto/arrow48.png" class="arrowImg4"/>
             </a>
             </div>
             <div class="col-md-3 col-sm-6 mt-5 mb-5 animate__animated animate__zoomIn flex d-flex">
@@ -133,7 +133,7 @@
                     <div class="progress-value">7 ans</div>
                 </div>
                     <p class="mt-3 h5 mb-5">CSS</p>
-                    <img src="img/arrow48.png" class="arrowImg2"/>
+                    <img src="img/picto/arrow48.png" class="arrowImg2"/>
                     </a>
             </div>
             <div class="col-md-3 col-sm-6 mt-5 mb-5 animate__animated animate__zoomIn flex d-flex">
@@ -148,7 +148,7 @@
                     <div class="progress-value">7 ans</div>
                 </div>
                 <p class="mt-3 h5 mb-5">HTML et autres</p>
-                <img id="scrool-anim" src="img/arrow48.png" class="arrowImg1" />
+                <img id="scrool-anim" src="img/picto/arrow48.png" class="arrowImg1" />
             </a>
             </div>
             <div class="container-fluid" v-if="togglePhp">

@@ -63,6 +63,16 @@
           </div>
         </div>
         <div class="col-xl-4 col-lg-6 col-md-6 col-xs-12 d-flex justify-content-center animate__animated animate__zoomIn mb-5">
+          <div v-on:click="toggleModaleUpdatePoints" class="btn" v-b-modal.modal-tall20>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="/img/projects/write-a-python-script.webp" alt="Script d'automatisation">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold  mt-2">Script d'automatisation</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-6 col-xs-12 d-flex justify-content-center animate__animated animate__zoomIn mb-5">
           <div v-on:click="toggleShopDrivn" class="btn" v-b-modal.modal-tall10>
             <div class="card" style="width: 18rem;">
               <img class="card-img-top" src="/img/projects/drivn-site.png" alt="Shop Driv'n motorsport">
@@ -211,6 +221,7 @@
     <juliengerbimodale :revelejuliengerbi="revelejuliengerbi" :toggleModaleJulienGerbi="toggleModaleJulienGerbi" />
     <signaturemailmodale :revelesignaturemail="revelesignaturemail" :toggleModaleSignatureMail="toggleModaleSignatureMail" />
     <parklibmodale :reveleparklib="reveleparklib" :toggleModaleParkLib="toggleModaleParkLib" />
+    <updatepointsmodale :reveleupdatepoints="reveleupdatepoints" :toggleModaleUpdatePoints="toggleModaleUpdatePoints" />
     </div>
 </template>
 
@@ -234,6 +245,7 @@ import ModaleSignatureMail from './modale/ModaleSignatureMail'
 import ModaleParkLib from './modale/ModaleParkLib'
 import ModaleInfraEntreprise from './modale/ModaleInfraEntreprise'
 import ModaleInfraHome from './modale/ModaleInfraHome'
+import ModaleUpdatePoints from './modale/ModaleUpdatePoints'
 
 export default {
   name: 'Portfolio',
@@ -258,6 +270,7 @@ export default {
       reveleparklib: false,
       reveleinfrahome: false,
       reveleinfraentreprise: false,
+      reveleupdatepoints: false,
     }
   },
   methods: {
@@ -315,6 +328,9 @@ export default {
   toggleModaleInfraHome: function() {
     this.reveleinfrahome = !this.reveleinfrahome
   },
+  toggleModaleUpdatePoints: function() {
+    this.reveleupdatepoints = !this.reveleupdatepoints
+  },
   toggleModaleJulienGerbi: function() {
     this.revelejuliengerbi = !this.revelejuliengerbi
   }
@@ -339,6 +355,7 @@ export default {
     'parklibmodale' : ModaleParkLib,
     'infraentreprisemodale' : ModaleInfraEntreprise,
     'infrahomemodale' : ModaleInfraHome,
+    'updatepointsmodale' : ModaleUpdatePoints,
   }
 }
 </script>
