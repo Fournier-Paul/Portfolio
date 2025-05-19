@@ -108,7 +108,7 @@ export default {
       this.alerterror = ''; // reset l'erreur au clic
 
       if (!this.recaptchaToken) {
-        this.alerterror = "Veuillez valider le reCAPTCHA avant d’envoyer.";
+        this.alerterror = "Veuillez valider le reCAPTCHA avant de valider le formulaire.";
         return;
       }
 
@@ -147,6 +147,7 @@ export default {
       };
 
       try {
+        console.log("URL utilisée :", process.env.VUE_APP_API_URL);
         const res = await fetch(`${process.env.VUE_APP_API_URL}/send-mail`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
