@@ -4,6 +4,9 @@
       <div v-if="alertsuccess" class="alert alert-success mt-3 mr-3">
         Votre message a bien été envoyé.
       </div>
+      <div v-if="alerterror" class="alert alert-danger mt-3 mr-3">
+        {{ alerterror }}
+      </div>
       <div class="row px-3">
         <div class="col-md-5 animate__animated animate__zoomIn mt-4">
           <h4 class="text-left">Informations de contact</h4>
@@ -52,17 +55,19 @@ export default {
     VueRecaptcha
   },
   data() {
-  return {
-    name: '',
-    email: '',
-    objet: '',
-    message: '',
-    alertsuccess: false,
-    sending: false,
-    recaptchaToken: null,
-    recaptchaSiteKey: process.env.VUE_APP_RECAPTCHA_SITE_KEY
-  };
-},
+    return {
+      name: '',
+      email: '',
+      objet: '',
+      message: '',
+      alertsuccess: false,
+      alerterror: '', // ✅ nouvelle variable
+      sending: false,
+      recaptchaToken: null,
+      recaptchaSiteKey: process.env.VUE_APP_RECAPTCHA_SITE_KEY
+    };
+  },
+
   mounted() {
     const savedData = JSON.parse(localStorage.getItem('contactForm'));
     if (savedData) {
@@ -71,6 +76,12 @@ export default {
       this.objet = savedData.objet || '';
       this.message = savedData.message || '';
     }
+
+    this.$nextTick(() => {
+      if (this.$refs.recaptcha && this.$refs.recaptcha.reset) {
+        this.$refs.recaptcha.reset();
+      }
+    });
   },
   watch: {
     name() { this.saveForm(); },
@@ -89,37 +100,40 @@ export default {
     },
     onCaptchaVerified(response) {
       this.recaptchaToken = response;
-      this.sendEmail();
     },
     onCaptchaExpired() {
       this.recaptchaToken = null;
     },
     verifyCaptchaAndSend() {
+      this.alerterror = ''; // reset l'erreur au clic
+
       if (!this.recaptchaToken) {
-        this.$refs.recaptcha.execute();
-      } else {
-        this.sendEmail();
+        this.alerterror = "Veuillez valider le reCAPTCHA avant d’envoyer.";
+        return;
       }
+
+      this.sendEmail();
     },
+
     async sendEmail() {
       if (this.sending) return;
       this.sending = true;
 
       if (!this.name.trim() || !this.email.trim() || !this.objet.trim() || !this.message.trim()) {
-        alert("Tous les champs doivent être remplis correctement.");
+        this.alerterror = "Tous les champs doivent être remplis correctement.";
         this.sending = false;
         return;
       }
 
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailRegex.test(this.email)) {
-        alert("Adresse e-mail invalide.");
+        this.alerterror = "Adresse e-mail invalide.";
         this.sending = false;
         return;
       }
 
       if (!this.recaptchaToken) {
-        alert("Veuillez valider le reCAPTCHA.");
+        this.alerterror = "Veuillez valider le reCAPTCHA.";
         this.sending = false;
         return;
       }
@@ -143,6 +157,7 @@ export default {
         await res.json();
 
         this.alertsuccess = true;
+        this.alerterror = '';
         this.name = '';
         this.email = '';
         this.objet = '';
@@ -152,10 +167,12 @@ export default {
         localStorage.removeItem('contactForm');
       } catch (err) {
         console.error('Erreur API:', err);
-        alert("Une erreur est survenue lors de l’envoi. Veuillez réessayer.");
+        this.alerterror = "Une erreur est survenue lors de l’envoi. Veuillez réessayer.";
+        this.alertsuccess = false;
       } finally {
         this.sending = false;
       }
+
     }
   }
 };
